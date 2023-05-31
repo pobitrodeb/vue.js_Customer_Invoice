@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\Counter;
+use App\Models\Customer;
 use App\Models\Product;
 use Illuminate\Database\Seeder;
 
@@ -19,5 +20,6 @@ class DatabaseSeeder extends Seeder
     {
         Counter::factory(1)->create();
         Product::factory(5)->create();
+       
     }
 }
