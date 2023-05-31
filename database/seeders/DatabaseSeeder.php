@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\Counter;
+use App\Models\Product;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -17,6 +18,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         Counter::factory(1)->create();
-
+        Product::factory(5)->create();
     }
 }
